@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+
+<!-- Video BackGround -->
+    <video width="100%" height="100%" 
+        loop autoplay muted>
+        <source src="Media/background.mp4" type="video/mp4">
+    </video>
+
+<!-- box container SignIn And SignUp -->
+    <div class="container">
+
+        <div class="sign-in">
+
+            <div id="DisPlayDwonInBtn1">
+                <h2>Hi !</h2>
+                <button type="submit" class="BtnSignIn" onclick="hidderSigIn2()">
+                    Sign in
+                </button>
+            </div>
+
+            <div id="DisPlayDwonIn">
+                <div class="form-signin">
+                    <input type="text" placeholder="Username">
+                    <br>
+                    <input type="password" placeholder="Password" id="ShowPassword" onclick="show()">
+                    <ion-icon name="eye-outline" class="i-eye"></ion-icon>
+                    <br>
+                    <button type="submit" class="Btn2 HoverBtn2" onclick="hidderSigIn()">Login</button>
+                </div>
+            </div>
+        </div> <!-- end Tag Sign In -->
+
+        <div class="sign-up">
+
+            <div id="DisPlayDwonInBtn2">
+                <h2>Hello !</h2>
+                <button type="submit" class="BtnSignUp" onclick="hidderSigUp2()">
+                    Sign up
+                </button>
+            </div>
+
+
+            <div id="DisPlayDwonUp">
+                <div class="form-signup">
+                    <input type="text" placeholder="FirsName">
+                    <br>
+                    <input type="text" placeholder="LastName">
+                    <br>
+                    <input type="text" placeholder="UserName">
+                    <br>
+                    <input type="password" placeholder="Password">
+                    <br>
+                    <button type="submit" class="Btn2 HoverBtn2" onclick="hidderSigUp()">Creat Account</button>
+                </div>
+            </div>
+
+        </div> <!-- end Tag Sign Up -->
+    </div>  <!-- end Tag Container -->
+
+    <script src="js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

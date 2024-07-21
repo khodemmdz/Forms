@@ -9,66 +9,107 @@
 </head>
 <body>
 
-<!-- Video BackGround -->
-    <video width="100%" height="100%" 
+    <!-- BackGround Gif -->
+    <video class="GifBackground" width="100%" height="100%" 
         loop autoplay muted>
         <source src="media/background.mp4" type="video/mp4">
     </video>
 
-<!-- box container SignIn And SignUp -->
+    <!-- box Form -->
     <div class="container">
 
-        <div class="sign-in">
+        <!-- Sign In -->
+        <div id="DisplayHideSignIn">
+        <div class="signIn">
+            <p class="TittleTxt">Login !</p>
 
-            <div id="DisPlayDwonInBtn1">
-                <h2>Hi !</h2>
-                <button type="submit" class="BtnSignIn" onclick="hidderSigIn2()">
-                    Sign in
-                </button>
+            <br><br><br>
+
+            <div class="group">
+                <input required="" type="text" class="input" id="userElemInput">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Username</label>
+
+                <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledUser">Enter your username</p>
             </div>
 
-            <div id="DisPlayDwonIn">
-                <div class="form-signin">
-                    <input type="text" placeholder="Username">
-                    <br>
-                    <input type="password" placeholder="Password" id="ShowPassword" onclick="show()">
-                    <ion-icon name="eye-outline" class="i-eye"></ion-icon>
-                    <br>
-                    <button type="submit" class="Btn2 HoverBtn2" onclick="hidderSigIn()">Login</button>
-                </div>
-            </div>
-        </div> <!-- end Tag Sign In -->
+            <br><br>
 
-        <div class="sign-up">
+            <div class="group">
+                <input required="" type="password" class="input" id="PassElemInput">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Password</label>
 
-            <div id="DisPlayDwonInBtn2">
-                <h2>Hello !</h2>
-                <button type="submit" class="BtnSignUp" onclick="hidderSigUp2()">
-                    Sign up
-                </button>
+                <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledPass">Enter your Password</p>
             </div>
 
+            <br><br>
 
-            <div id="DisPlayDwonUp">
-                <div class="form-signup">
-                    <input type="text" placeholder="FirsName">
-                    <br>
-                    <input type="text" placeholder="LastName">
-                    <br>
-                    <input type="text" placeholder="UserName">
-                    <br>
-                    <input type="password" placeholder="Password">
-                    <br>
-                    <button type="submit" class="Btn2 HoverBtn2" onclick="hidderSigUp()">Creat Account</button>
-                </div>
+            <button class="BtnLogin" onclick="showErorInput()">Login</button>
+
+            <br>
+
+            <div class="switchForm">
+                <p class="BtnSwitch" id="BtnSwitchSignIn">Create Account !</p>
+                <p id="resetPassword">Forget Password ?</p>
             </div>
 
-        </div> <!-- end Tag Sign Up -->
-    </div>  <!-- end Tag Container -->
+        </div>
+        </div>
+
+        <!-- Sign Up -->
+        <div id="DisplayHideSignUp">
+        <div class="signUp clearFix">
+            <p class="TittleTxt">Create Account !</p>
+    
+            <br><br><br>
+    
+            <div class="group">
+                <input required="" type="text" class="input" id="NameElemInputUp">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+
+                <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledNameUp">Enter your Full name</p>
+            </div>
+
+            <br><br>
+
+            <div class="group">
+                <input required="" type="text" class="input" id="UserElemInputUp">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Username</label>
+
+                <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledUserUp">Enter your Username</p>
+            </div>
+    
+            <br><br>
+    
+            <div class="group">
+                <input required="" type="password" class="input" id="PassElemInputUp">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Password</label>
+
+                <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledPassUp">Enter your Password</p>
+            </div>
+    
+            <br>
+    
+            <button class="BtnCreateAcc" onclick="showErorInputSignUp()">Sign Up</button>
+    
+            <br>
+    
+            <div class="switchForm">
+                    <pre class="BtnSwitch" id="BtnSwitchSignUp">    have an account ! - Login</pre>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

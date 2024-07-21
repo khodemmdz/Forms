@@ -4,326 +4,165 @@
     box-sizing: border-box;
 }
 body{
-    width: 100vw;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* backGround Add */
-video{
+.GifBackground{
     object-fit: cover;
     position: relative;
 }
-/* Form Login And Creat Account */
+
+/* box Form */
 .container{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    border: 1px solid rgba(255, 255, 255, 0.486);
-    border-radius: 16px;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.034);
-}
-/* Side Sign In */
-.sign-in{
-    width: 50%;
-    height: 100%;
-    border-radius: 0px 16px 16px 0;
-    float: right;
+    width: 85%;
+    height: 85%;
+    border: 2px solid rgba(255, 255, 255, 0.288);
+    border-radius: 12px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#DisPlayDwonInBtn1{
-    display: none;
-}
-.sign-in h2{
-    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(10,219,90,1) 50%, rgba(7,99,208,1) 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 85px;
-    font-weight: bold;
-    font-family: Billy;
-}
-.sign-in .BtnSignIn{
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px solid rgb(61, 106, 255);
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background: transparent;
-    color: #000000;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.4s linear;
-    cursor: pointer;
-    margin-top: 22px;
-}
-.sign-in .BtnSignIn:hover {
-    background: rgb(61, 106, 255);
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-.sign-in .BtnSignIn:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-}
-.sign-in .BtnSignIn::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
+    padding: 20px;
     position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
+    backdrop-filter: blur(4px);
 }
-@keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
-}
-.sign-in .BtnSignIn:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-}
-#DisPlayDwonIn{
-    display: block;
-}
-.form-signin{
+
+/* Card Forms */
+.signIn{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: space-evenly;
-}
-.form-signin input{
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #000000a8;
-    outline: none;
-    padding: 5px 19px;
-    background: transparent;
-    color: #00ff73;
-}
-.form-signin input:focus{
-    border: 1px solid #00ff9d;
-}
-.form-signin .i-eye{
-    position: relative;
-    left: 313px;
-    bottom: 25px;
-    font-size: 23px;
-    color: #000000;
-    cursor: pointer;
-}
-.form-signin .Btn2{
-    width: 98px;
-    height: 33px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    7px 7px 20px 0px rgba(0,0,0,.1),
-    4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    font-size: 15px;
-}
-.form-signin .HoverBtn2{
-    background: #00ff9d;
-    background: linear-gradient(0deg, #00ff9d 0%, #00ff9d 100%);
-    border: none;
-}
-.form-signin .HoverBtn2:before {
-    height: 0%;
-    width: 2px;
-}
-.form-signin .HoverBtn2:hover {
-    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-}
-/* Side Sign Up */
-.sign-up{
-    width: 50%;
-    height: 100%;
-    border-radius: 16px 0 0 16px;
-    float: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.sign-up h2{
-    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(10,219,90,1) 50%, rgba(7,99,208,1) 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 85px;
-    font-weight: bold;
-    font-family: Billy;
-}
-.sign-up .BtnSignUp{
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px solid rgb(61, 106, 255);
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background: transparent;
-    color: #000000;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.4s linear;
-    cursor: pointer;
-    margin-top: 22px;
-}
-.sign-up .BtnSignUp:hover {
-    background: rgb(61, 106, 255);
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-.sign-up .BtnSignUp:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-}
-.sign-up .BtnSignUp::before {
-    content: '';
+#DisplayHideSignIn{
     display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
 }
-@keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
-}
-.sign-up .BtnSignUp:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-}
-#DisPlayDwonUp{
-    display: none;
-}
-.form-signup{
+.signUp{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: space-evenly;
+    align-items: center;
 }
-.form-signup input{
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #000000a8;
-    outline: none;
-    padding: 5px 19px;
+#DisplayHideSignUp{
+    display: none;
+}
+
+/* Root Styles */
+.TittleTxt{
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(10,219,90,1) 50%, rgba(7,99,208,1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: Pony;
+}
+.group{
+    position: relative;
+}
+.input{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    padding: 10px 10px 10px 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #00a69346;
     background: transparent;
-    color: #00ff73;
+    outline: none;
 }
-.form-signup input:focus{
-    border: 1px solid #00ff9d;
+label{
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.3s ease all;
 }
-.form-signup .Btn2{
-    width: 150px;
-    height: 33px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-weight: 500;
+.input:focus ~ label, .input:valid ~ label{
+    top: -20px;
+    font-size: 14px;
+    color: #00A693;
+}
+.bar{
+    position: relative;
+    display: block;
+    width: 200px;
+}
+.bar:before, .bar:after{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #00A693;
+    transition: 0.3s ease all;
+}
+.bar:before{
+    left: 50%;
+}
+.bar:after{
+    right: 50%;
+}
+.input:focus ~ .bar:before, .input:focus ~ .bar:after{
+    width: 50%;
+}
+.highlight{
+    position: absolute;
+    height: 60%;
+    width: 130px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+}
+.input:focus ~ .highlight{
+    animation: inputHighlighter 0.3s ease;
+}
+@keyframes inputHighlighter{
+    from {
+     background: #00A693;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+}
+.BtnLogin,.BtnCreateAcc{
+    width: 85px;
+    height: 30px;
+    border: 2px solid #00A693;
+    border-radius: 6px;
     background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    7px 7px 20px 0px rgba(0,0,0,.1),
-    4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
 }
-.form-signup .HoverBtn2{
-    background: #00ff9d;
-    background: linear-gradient(0deg, #00ff9d 0%, #00ff9d 100%);
-    border: none;
+.BtnLogin:hover, .BtnCreateAcc:hover{
+    background: #00A693;
 }
-.form-signup .HoverBtn2:before {
-    height: 0%;
-    width: 2px;
+.BtnLogin:active, .BtnCreateAcc:active{
+    scale: 1.2;
 }
-.form-signup .HoverBtn2:hover {
-    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+.switchForm{
+    display: flex;
+}
+.BtnSwitch{
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #546fe4;
+}
+#resetPassword{
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
 }

@@ -52,8 +52,8 @@
             <br>
 
             <div class="switchForm">
-                <p class="BtnSwitch" id="BtnSwitchSignIn">Create Account !</p>
-                <p id="resetPassword">Forget Password ?</p>
+                <pre class="BtnSwitch" id="BtnSwitchSignIn">Create Account !</pre>
+                <pre id="resetPassword">|   Forget Password ?</pre>
             </div>
 
         </div>
@@ -97,6 +97,17 @@
                 <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledPassUp">Enter your Password</p>
             </div>
     
+            <br><br>
+
+            <div class="group">
+                <input required="" type="password" class="input" id="PassElemInputUp">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+
+                <p style="color: red; margin-left: 35px; font-weight: bold; margin-top: 5px; display: none;" id="erorFiledEmailUp">Enter your email</p>
+            </div>
+
             <br>
     
             <button class="BtnCreateAcc" onclick="showErorInputSignUp()">Sign Up</button>

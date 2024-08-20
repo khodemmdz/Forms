@@ -18,14 +18,14 @@ body{
 .container{
     width: 85%;
     height: 85%;
-    border: 2px solid rgba(255, 255, 255, 0.288);
+    border: 2px solid rgba(255, 255, 255, 0.11);
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     position: absolute;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
 }
 
 /* Card Forms */
@@ -158,11 +158,11 @@ label{
     margin-right: 20px;
     cursor: pointer;
     font-weight: bold;
-    color: #546fe4;
+    color: #000;
 }
 #resetPassword{
     font-size: 14px;
     cursor: pointer;
     font-weight: bold;
-    color: red;
+    color: #000;
 }

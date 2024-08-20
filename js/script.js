@@ -69,4 +69,10 @@ function showErorInputSignUp () {
     }else{
         errorShowValuePassUp.style.display = 'none'
     }
+
+    if (!erorFiledEmailUp.value) {
+        erorFiledEmailUp.style.display = 'block'
+    }else{
+        erorFiledEmailUp.style.display = 'none'
+    }
 }
